@@ -10,6 +10,11 @@ If the app doesn’t log in immediately, please wait a few minutes — the backe
 
 This is a **full-stack HR Management System** I built from scratch with AI-assisted development.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8a51929-4b3d-4e46-8f3e-dd06bb1a00e2" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6fbb48d5-e9d8-4cee-8023-c2620cabad9b" />
+
+
 **Tech Stack:**
 
 * **Backend:** Django (Python)
