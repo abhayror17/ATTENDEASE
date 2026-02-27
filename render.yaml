@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: attendease-api
+    env: python
+    region: oregon
+    plan: free
+    runtime: python-3.12.4
+    buildCommand: "pip install -r backend/requirements.txt && cd backend && python -c 'from app.database import init_db; init_db()'"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
+      - key: DATABASE_URL
+        fromDatabase:
+          name: attendease-db
+          property: connectionString
+      - key: FRONTEND_URL
+        value: https://your-frontend.vercel.app
+      - key: TIMEZONE
+        value: Asia/Kolkata
+      - key: SUPERADMIN_SETUP_SECRET
+        generateValue: true
+      - key: SUPERADMIN_EMAIL
+        value: admin@example.com
+      - key: SUPERADMIN_USERNAME
+        value: admin
+      - key: SUPERADMIN_PASSWORD
+        value: Admin@123
+
+databases:
+  - name: attendease-db
+    region: oregon
+    plan: free
