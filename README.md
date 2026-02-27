@@ -2,175 +2,162 @@
 
 <div align="center">
 
-**A Modern Employee Attendance Management System**
+<img src="frontend/public/screenshots/dashboard.png" alt="AttendEase Dashboard" width="100%">
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://attendease-xi-two.vercel.app)
-[![Backend](https://img.shields.io/badge/backend-fastapi-009688?style=for-the-badge)](https://attendease-pazn.onrender.com/api/docs)
-[![Frontend](https://img.shields.io/badge/frontend-react-61DAFB?style=for-the-badge&logo=react)](https://attendease-xi-two.vercel.app)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+<h3>A Modern Employee Attendance Management System</h3>
 
-*If the app doesn't log in immediately, please wait a few minutes - the backend services are hosted on Render and may take time to spin up.*
+<p>
+  <strong>Streamline workforce management with real-time attendance tracking, leave management, and comprehensive analytics</strong>
+</p>
+
+<p>
+  <a href="https://attendease-xi-two.vercel.app"><strong>Live Demo</strong></a>
+  &nbsp;•&nbsp;
+  <a href="https://attendease-pazn.onrender.com/api/docs"><strong>API Docs</strong></a>
+  &nbsp;•&nbsp;
+  <a href="#-quick-demo-access"><strong>Demo Credentials</strong></a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/demo-live-success?style=flat-square" alt="Live Demo">
+  <img src="https://img.shields.io/badge/python-3.11+-blue?style=flat-square" alt="Python">
+  <img src="https://img.shields.io/badge/react-18+-61DAFB?style=flat-square" alt="React">
+  <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License">
+</p>
 
 </div>
 
 ---
 
-## Quick Demo Access
-
-Want to explore the app? Use these credentials:
-
-### Admin Portal
-| Field | Value |
-|-------|-------|
-| **Email** | `admin@attendease.com` |
-| **Password** | `Admin@123` |
-
-### Employee Portal
-Click **Register** on the login page to create your own employee account and experience the employee-side features.
+> **Note:** If the app doesn't respond immediately, please wait a few minutes. The backend is hosted on Render and may take time to spin up from sleep mode.
 
 ---
 
-## Overview
+## Demo Access
 
-AttendEase is a full-stack HR Management System designed with **role-based architecture** at its core. The platform provides two distinct user experiences within a single application:
+Experience both portals without setup:
 
-| Portal | Users | Capabilities |
-|--------|-------|--------------|
-| **Admin Portal** | HR Managers, Administrators | Full workforce management, attendance tracking, leave approvals, department control |
-| **Employee Portal** | Regular Employees | Personal check-in/out, leave requests, attendance history |
+### Admin Portal
+| | |
+|---|---|
+| **Email** | `admin@attendease.com` |
+| **Password** | `Admin@123` |
+| **Access** | Full system control, employee management, attendance, leave approvals |
 
-This separation ensures enterprise-grade security, clean architecture, and scalable design.
+### Employee Portal
+| | |
+|---|---|
+| **Action** | Click **Register** on the login page |
+| **Access** | Personal check-in/out, leave requests, attendance history |
+
+---
+
+## Why AttendEase?
+
+| Challenge | Solution |
+|-----------|----------|
+| Scattered attendance records | Centralized real-time dashboard |
+| Manual leave approvals | Streamlined request workflow |
+| No visibility into workforce | Analytics with trends & distribution |
+| Complex HR systems | Clean, intuitive dual-portal design |
 
 ---
 
 ## Features
 
-### Admin Portal
+### For Administrators
 
 | Feature | Description |
 |---------|-------------|
-| **Dashboard** | Real-time analytics with attendance trends, distribution charts, and workforce statistics |
-| **Employee Management** | Complete CRUD operations, department assignment, user linking, status tracking |
-| **Attendance Control** | Daily overview, manual check-in/out, status overrides, working hours calculation |
+| **Analytics Dashboard** | Real-time workforce statistics, 7-day attendance trends, distribution charts |
+| **Employee Management** | Add, edit, delete employees with department assignment and status tracking |
+| **Attendance Control** | Daily overview, manual check-in/out, status overrides, working hours |
 | **Leave Management** | Approve/reject requests with comments, filter by status and type |
-| **Department Management** | Create, edit, delete departments with employee count tracking |
+| **Department Management** | Organize workforce with department structure |
 
-### Employee Portal
+### For Employees
 
 | Feature | Description |
 |---------|-------------|
-| **Dashboard** | Personal attendance stats, recent activity history |
-| **Check-In/Out** | One-click attendance marking with real-time status display |
-| **Leave Requests** | Submit requests, select leave type, track approval status |
+| **Personal Dashboard** | Own attendance stats and recent activity |
+| **Quick Check-In** | One-click attendance with real-time status |
+| **Leave Requests** | Submit and track leave requests with ease |
 
 ---
 
 ## Screenshots
 
-### Authentication
+All screenshots available at [`frontend/public/screenshots/`](frontend/public/screenshots/)
 
-<div align="center">
-
-**Login Page**
-
-![Login](frontend/public/screenshots/login.png)
-
-**Register Page**
-
-![Register](frontend/public/screenshots/register.png)
-
-</div>
-
-### Dashboard
-
-<div align="center">
-
-**Admin Dashboard - Real-time Analytics**
-
-![Dashboard](frontend/public/screenshots/dashboard.png)
-
-</div>
-
-### Core Features
-
-<div align="center">
-
-**Check-In/Out Interface**
-
-![Check-In](frontend/public/screenshots/checkin.png)
-
-**Leave Requests Management**
-
-![Leave Requests](frontend/public/screenshots/leave-requests.png)
-
-</div>
+| | |
+|:---:|:---:|
+| **Login** | **Register** |
+| <img src="frontend/public/screenshots/login.png" alt="Login" width="400"> | <img src="frontend/public/screenshots/register.png" alt="Register" width="400"> |
+| **Dashboard** | **Check-In** |
+| <img src="frontend/public/screenshots/dashboard.png" alt="Dashboard" width="400"> | <img src="frontend/public/screenshots/checkin.png" alt="Check-In" width="400"> |
+| **Leave Requests** | |
+| <img src="frontend/public/screenshots/leave-requests.png" alt="Leave Requests" width="400"> | |
 
 ---
 
 ## Tech Stack
 
-### Frontend
+<table>
+<tr>
+<td width="50%">
 
-| Technology | Purpose |
-|------------|---------|
-| React 18 | UI library |
-| Vite | Build tool & dev server |
-| React Router | Client-side routing |
-| Axios | HTTP client |
-| Lucide React | Icon library |
-| Context API | State management |
+### Frontend
+- **React 18** - UI Library
+- **Vite** - Build Tool
+- **React Router** - Navigation
+- **Axios** - HTTP Client
+- **Lucide React** - Icons
+- **Context API** - State
+
+</td>
+<td width="50%">
 
 ### Backend
+- **FastAPI** - Python Framework
+- **SQLAlchemy** - ORM
+- **PostgreSQL** - Production DB
+- **SQLite** - Development DB
+- **JWT** - Authentication
+- **Bcrypt** - Security
 
-| Technology | Purpose |
-|------------|---------|
-| FastAPI | Python web framework |
-| SQLAlchemy | ORM |
-| PostgreSQL | Production database |
-| SQLite | Development database |
-| JWT | Authentication |
-| Bcrypt | Password hashing |
+</td>
+</tr>
+</table>
 
 ---
 
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        FRONTEND (React + Vite)                   │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐  │
-│  │   Public    │  │  Protected  │  │      Admin Routes       │  │
-│  │   Routes    │  │   Routes    │  │   (Role-based Access)   │  │
-│  │ ─────────── │  │ ─────────── │  │ ─────────────────────── │  │
-│  │ • Login     │  │ • Dashboard │  │ • Employees             │  │
-│  │ • Register  │  │ • Check-In  │  │ • Attendance            │  │
-│  │ • Password  │  │ • Leaves    │  │ • Departments           │  │
-│  │   Reset     │  │             │  │                         │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────────┘  │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ HTTP/REST API
+┌─────────────────────────────────────────────────────────────┐
+│                    FRONTEND (React + Vite)                   │
+│                                                              │
+│   Public Routes          Protected Routes      Admin Routes │
+│   ─────────────          ────────────────      ──────────── │
+│   • Login                • Dashboard           • Employees  │
+│   • Register             • Check-In/Out        • Attendance │
+│   • Password Reset       • Leave Requests      • Departments│
+│                                                              │
+└────────────────────────────┬────────────────────────────────┘
+                             │ REST API
                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     BACKEND (FastAPI)                            │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐  │
-│  │ Controllers │  │  Services   │  │     Repositories        │  │
-│  │ ─────────── │  │ ─────────── │  │ ─────────────────────── │  │
-│  │ • Auth      │  │ • Auth      │  │ • User                  │  │
-│  │ • Employee  │  │ • Employee  │  │ • Employee              │  │
-│  │ • Attendance│  │ • Attendance│  │ • Department            │  │
-│  │ • Leave     │  │ • Leave     │  │                         │  │
-│  │ • Department│  │ • Department│  │                         │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────────┘  │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ SQLAlchemy ORM
+┌─────────────────────────────────────────────────────────────┐
+│                    BACKEND (FastAPI)                         │
+│                                                              │
+│   Controllers  →  Services  →  Repositories  →  Models     │
+│                                                              │
+└────────────────────────────┬────────────────────────────────┘
+                             │ SQLAlchemy
                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                        DATABASE                                  │
-│         PostgreSQL (Production) / SQLite (Development)          │
-│  ┌───────────┐ ┌───────────┐ ┌───────────┐ ┌─────────────────┐  │
-│  │  Users    │ │ Employees │ │Attendance │ │ Leave Requests  │  │
-│  └───────────┘ └───────────┘ └───────────┘ └─────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    DATABASE                                  │
+│            PostgreSQL (Prod) / SQLite (Dev)                 │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -183,124 +170,64 @@ This separation ensures enterprise-grade security, clean architecture, and scala
 - Node.js 18+
 - Git
 
-### Backend Setup
+### 1. Clone & Backend Setup
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/abhayror17/ATTENDEASE.git
-cd ATTENDEASE
+cd ATTENDEASE/backend
 
-# Navigate to backend
-cd backend
-
-# Create virtual environment
+# Create & activate virtual environment
 python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-# Install dependencies
+# Install dependencies & setup
 pip install -r requirements.txt
-
-# Copy environment file
-copy .env.example .env
-
-# Initialize database with seed data
+cp .env.example .env
 python -m app.scripts.db_init seed
-
-# Create superuser
 python -m app.scripts.db_init superuser --email admin@example.com --username admin --password Admin@123
 
-# Run server
+# Start server
 uvicorn app.main:app --reload --port 8000
 ```
 
-### Frontend Setup
+### 2. Frontend Setup
 
 ```bash
-# Navigate to frontend
 cd ../frontend
-
-# Install dependencies
 npm install
-
-# Copy environment file
-copy .env.example .env
-
-# Run development server
+cp .env.example .env
 npm run dev
 ```
 
-### Access the Application
+### 3. Access
 
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000/api/docs
-- Default Admin: `admin@example.com` / `Admin@123`
-
----
-
-## Environment Variables
-
-### Backend (`backend/.env`)
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `SECRET_KEY` | Yes | JWT secret key |
-| `DATABASE_URL` | Yes | Database connection string |
-| `FRONTEND_URL` | Yes | Frontend URL for CORS |
-| `DEBUG` | No | Enable debug mode |
-| `SUPERADMIN_EMAIL` | No | Admin email |
-| `SUPERADMIN_USERNAME` | No | Admin username |
-| `SUPERADMIN_PASSWORD` | No | Admin password |
-| `TIMEZONE` | No | Default timezone |
-
-### Frontend (`frontend/.env`)
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `VITE_API_URL` | Yes | Backend API URL (e.g., `http://localhost:8000/api`) |
+| Service | URL |
+|---------|-----|
+| Frontend | http://localhost:5173 |
+| API Docs | http://localhost:8000/api/docs |
+| Admin Login | `admin@example.com` / `Admin@123` |
 
 ---
 
-## API Documentation
+## API Endpoints
 
-### Authentication
+| Category | Endpoint | Method | Description |
+|----------|----------|--------|-------------|
+| **Auth** | `/api/auth/login` | POST | User login |
+| | `/api/auth/register` | POST | User registration |
+| | `/api/auth/profile` | GET | Current user |
+| **Employees** | `/api/employees` | GET/POST | List/Create |
+| | `/api/employees/{id}` | GET/PUT/DELETE | Read/Update/Delete |
+| **Attendance** | `/api/attendance/check-in` | POST | Check in |
+| | `/api/attendance/check-out` | POST | Check out |
+| | `/api/attendance/today` | GET | Today's records |
+| **Leave** | `/api/leave-requests` | GET/POST | List/Create |
+| | `/api/leave-requests/{id}/approve` | POST | Approve |
+| | `/api/leave-requests/{id}/reject` | POST | Reject |
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/login` | User login |
-| POST | `/api/auth/register` | User registration |
-| POST | `/api/auth/logout` | User logout |
-| GET | `/api/auth/profile` | Get current user |
-
-### Employees
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/employees` | List all employees |
-| GET | `/api/employees/{id}` | Get employee details |
-| POST | `/api/employees` | Create employee (Admin) |
-| PUT | `/api/employees/{id}` | Update employee (Admin) |
-| DELETE | `/api/employees/{id}` | Delete employee (Admin) |
-
-### Attendance
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/attendance/today` | Today's attendance |
-| POST | `/api/attendance/check-in` | Check in |
-| POST | `/api/attendance/check-out` | Check out |
-| GET | `/api/attendance/stats` | Attendance statistics |
-
-### Leave Requests
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/leave-requests` | List leave requests |
-| POST | `/api/leave-requests` | Create leave request |
-| POST | `/api/leave-requests/{id}/approve` | Approve request (Admin) |
-| POST | `/api/leave-requests/{id}/reject` | Reject request (Admin) |
-
-Full API documentation: `/api/docs` (Swagger UI)
+Full documentation: `/api/docs` (Swagger UI)
 
 ---
 
@@ -308,59 +235,21 @@ Full API documentation: `/api/docs` (Swagger UI)
 
 ### Backend (Render)
 
-1. Create a PostgreSQL database on Render
-2. Create a Web Service pointing to your GitHub repo
-3. Set root directory to `backend`
-4. Configure build command: `chmod +x build.sh && ./build.sh`
-5. Configure start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-6. Add environment variables (see Environment Variables section)
+| Step | Configuration |
+|------|---------------|
+| 1. Create PostgreSQL | Note the Internal Database URL |
+| 2. Create Web Service | Connect GitHub repo |
+| 3. Root Directory | `backend` |
+| 4. Build Command | `chmod +x build.sh && ./build.sh` |
+| 5. Start Command | `uvicorn app.main:app --host 0.0.0.0 --port $PORT` |
 
 ### Frontend (Vercel)
 
-1. Import your GitHub repository
-2. Set root directory to `frontend`
-3. Set `VITE_API_URL` environment variable
-4. Deploy
-
----
-
-## Role-Based Access Control
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    ACCESS CONTROL MATRIX                     │
-├─────────────────┬──────────────┬────────────────────────────┤
-│     Resource    │   Employee   │          Admin             │
-├─────────────────┼──────────────┼────────────────────────────┤
-│ Dashboard       │ Own Stats    │ Full Analytics             │
-│ Check-In/Out    │ Self Only    │ All Employees              │
-│ Leave Requests  │ Create/View  │ Approve/Reject             │
-│ Employees       │ View         │ Full CRUD                  │
-│ Attendance      │ View Own     │ Manage All                 │
-│ Departments     │ View         │ Full CRUD                  │
-└─────────────────┴──────────────┴────────────────────────────┘
-```
-
----
-
-## Design System
-
-The UI features a modern dark theme with distinctive green accents:
-
-| Element | Value |
-|---------|-------|
-| Background | `#000000` |
-| Surface | `#0a0a0a` |
-| Primary | `#00ff00` |
-| Text | `#ffffff` |
-| Border | `#1f1f1f` |
-
-Design principles:
-- Dark mode for reduced eye strain
-- Cyberpunk/terminal aesthetic
-- Glassmorphism effects
-- Smooth animations
-- Responsive layout
+| Step | Configuration |
+|------|---------------|
+| 1. Import Project | Connect GitHub repo |
+| 2. Root Directory | `frontend` |
+| 3. Environment | `VITE_API_URL=https://your-backend.onrender.com/api` |
 
 ---
 
@@ -370,20 +259,19 @@ Design principles:
 ATTENDEASE/
 ├── backend/
 │   ├── app/
-│   │   ├── controllers/     # HTTP endpoints
+│   │   ├── controllers/     # API endpoints
 │   │   ├── services/        # Business logic
 │   │   ├── repositories/    # Data access
-│   │   ├── models.py        # SQLAlchemy models
-│   │   ├── schemas.py       # Pydantic schemas
-│   │   └── main.py          # FastAPI app
-│   ├── requirements.txt
-│   └── build.sh
+│   │   ├── models.py        # Database models
+│   │   ├── schemas.py       # Validation schemas
+│   │   └── main.py          # Application entry
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── pages/           # React components
-│   │   ├── components/      # Shared components
-│   │   ├── context/         # Auth context
+│   │   ├── pages/           # Page components
+│   │   ├── components/      # Reusable UI
+│   │   ├── context/         # State management
 │   │   ├── api/             # API client
 │   │   └── index.css        # Design system
 │   └── package.json
@@ -393,26 +281,22 @@ ATTENDEASE/
 
 ---
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 
-**Built with AI assistance using GLM-5 and Gemini**
+<p>Built with AI assistance using GLM-5 and Gemini</p>
 
-[Live Demo](https://attendease-xi-two.vercel.app) · [Report Bug](https://github.com/abhayror17/ATTENDEASE/issues) · [Request Feature](https://github.com/abhayror17/ATTENDEASE/issues)
+<p>
+  <a href="https://attendease-xi-two.vercel.app">Live Demo</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/abhayror17/ATTENDEASE/issues">Report Bug</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/abhayror17/ATTENDEASE/issues">Request Feature</a>
+</p>
 
 </div>
