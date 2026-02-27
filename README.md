@@ -2,17 +2,7 @@
 
 <div align="center">
 
-<<<<<<< HEAD
 **A Modern Employee Attendance Management System**
-=======
-If the app doesn’t log in immediately, please wait a few minutes — the backend services are hosted on Render and may take a short time to spin up.
-[Future/Update
-](https://docs.google.com/document/d/1xoTrx__FpnH0ohU-g_tYSZecc584nIGxhAsfkumzsXc/edit?usp=sharing)
-
-EMAIL -- admin@attendease.com
-PASS -- Admin@123
----
->>>>>>> b7c16e3629eb9f0c6cb2f7b070682c66c75522ee
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://attendease-xi-two.vercel.app)
 [![Backend](https://img.shields.io/badge/backend-fastapi-009688?style=for-the-badge)](https://attendease-pazn.onrender.com/api/docs)
@@ -21,32 +11,22 @@ PASS -- Admin@123
 
 *If the app doesn't log in immediately, please wait a few minutes - the backend services are hosted on Render and may take time to spin up.*
 
-<<<<<<< HEAD
 </div>
-=======
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8a51929-4b3d-4e46-8f3e-dd06bb1a00e2" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6fbb48d5-e9d8-4cee-8023-c2620cabad9b" />
+---
 
+## Quick Demo Access
 
-**Tech Stack:**
+Want to explore the app? Use these credentials:
 
-* **Backend:** Django (Python)
-* **Database:** PostgreSQL
-* **Frontend:** React
-* **Backend & DB Hosting:** Render
-* **Frontend Hosting:** Vercel
+### Admin Portal
+| Field | Value |
+|-------|-------|
+| **Email** | `admin@attendease.com` |
+| **Password** | `Admin@123` |
 
-AI models used during development:
-
-* Backend logic assistance: GLM-5
-* Frontend structuring: Gemini 3 Flash
-
-* Backend link -- [https://attendease-backend-x9uq.onrender.com](https://attendease-pazn.onrender.com)
-* Frontend link -- https://attendease-xi-two.vercel.app
-
-This wasn’t just about building features — it was about building a scalable system architecture.
->>>>>>> b7c16e3629eb9f0c6cb2f7b070682c66c75522ee
+### Employee Portal
+Click **Register** on the login page to create your own employee account and experience the employee-side features.
 
 ---
 
