@@ -11,7 +11,6 @@ ENV/
 *.egg-info/
 dist/
 build/
-.python-version
 
 # Environment variables
 .env
@@ -37,9 +36,3 @@ frontend/dist/
 # OS
 .DS_Store
 Thumbs.db
-
-# Project docs (internal)
-ARCHITECTURE.md
-DEPLOYMENT_GUIDE.md
-build.md
-query
