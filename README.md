@@ -4,6 +4,9 @@
 If the app doesn’t log in immediately, please wait a few minutes — the backend services are hosted on Render and may take a short time to spin up.
 [Future/Update
 ](https://docs.google.com/document/d/1xoTrx__FpnH0ohU-g_tYSZecc584nIGxhAsfkumzsXc/edit?usp=sharing)
+
+EMAIL -- admin@attendease.com
+PASS -- Admin@123
 ---
 
 ## 🚀 What This Is
