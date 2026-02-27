@@ -21,9 +21,8 @@ with engine.connect() as conn:
 echo "Initializing database tables..."
 python -c "from app.database import init_db; init_db()"
 
-echo "Creating superadmin (if SUPERADMIN_SETUP_SECRET is set)..."
-if [ -n "$SUPERADMIN_SETUP_SECRET" ]; then
-  python -c "
+echo "Creating superadmin..."
+python -c "
 import os
 import sys
 sys.path.insert(0, '.')
@@ -34,25 +33,32 @@ from app.schemas import CreateSuperAdminRequest
 db = SessionLocal()
 try:
     auth_service = AuthService(db)
-    # Check if superadmin already exists
     from app.repositories.user_repository import UserRepository
     user_repo = UserRepository(db)
-    if user_repo.get_by_email(os.getenv('SUPERADMIN_EMAIL', 'admin@example.com')):
-        print('Superadmin already exists, skipping...')
+    
+    email = os.getenv('SUPERADMIN_EMAIL', 'admin@example.com')
+    username = os.getenv('SUPERADMIN_USERNAME', 'admin')
+    password = os.getenv('SUPERADMIN_PASSWORD', 'Admin@123')
+    setup_secret = os.getenv('SUPERADMIN_SETUP_SECRET', '')
+    
+    if user_repo.get_by_email(email):
+        print(f'Superadmin already exists: {email}')
     else:
         data = CreateSuperAdminRequest(
-            email=os.getenv('SUPERADMIN_EMAIL', 'admin@example.com'),
-            username=os.getenv('SUPERADMIN_USERNAME', 'admin'),
-            password=os.getenv('SUPERADMIN_PASSWORD', 'Admin@123'),
-            setup_secret=os.getenv('SUPERADMIN_SETUP_SECRET')
+            email=email,
+            username=username,
+            password=password,
+            setup_secret=setup_secret
         )
-        auth_service.create_super_admin(data)
-        print('Superadmin created successfully!')
+        user = auth_service.create_super_admin(data)
+        print(f'Superadmin created successfully! Email: {email}, Username: {username}')
 except Exception as e:
-    print(f'Could not create superadmin: {e}')
+    print(f'ERROR creating superadmin: {e}')
+    import traceback
+    traceback.print_exc()
+    sys.exit(1)
 finally:
     db.close()
 "
-fi
 
 echo "Build completed successfully!"
