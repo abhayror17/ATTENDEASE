@@ -4,6 +4,9 @@ set -e
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
+echo "Dropping existing tables (if any)..."
+python -c "from app.database import Base, engine; Base.metadata.drop_all(bind=engine)"
+
 echo "Initializing database tables..."
 python -c "from app.database import init_db; init_db()"
 
