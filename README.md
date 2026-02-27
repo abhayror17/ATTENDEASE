@@ -28,7 +28,7 @@ AI models used during development:
 * Backend logic assistance: GLM-5
 * Frontend structuring: Gemini 3 Flash
 
-* Backend link -- https://attendease-backend-x9uq.onrender.com
+* Backend link -- [https://attendease-backend-x9uq.onrender.com](https://attendease-pazn.onrender.com)
 * Frontend link -- https://attendease-xi-two.vercel.app
 
 This wasn’t just about building features — it was about building a scalable system architecture.
