@@ -4,8 +4,19 @@ set -e
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
-echo "Dropping existing tables (if any)..."
-python -c "from app.database import Base, engine; Base.metadata.drop_all(bind=engine)"
+echo "Dropping existing tables with CASCADE..."
+python -c "
+from app.database import engine
+from sqlalchemy import text
+with engine.connect() as conn:
+    # Drop all tables with cascade
+    result = conn.execute(text(\"SELECT tablename FROM pg_tables WHERE schemaname = 'public'\"))
+    tables = [row[0] for row in result]
+    for table in tables:
+        conn.execute(text(f'DROP TABLE IF EXISTS {table} CASCADE'))
+    conn.commit()
+    print(f'Dropped {len(tables)} tables')
+"
 
 echo "Initializing database tables..."
 python -c "from app.database import init_db; init_db()"
