@@ -67,7 +67,7 @@ This separation ensures enterprise-grade security, clean architecture, and scala
 
 ## Screenshots
 
-All screenshots available at frontend/public/screenshots/
+All screenshots available at [frontend/public/screenshots/](https://github.com/abhayror17/ATTENDEASE/tree/main/frontend/public/screenshots)
 
 ---
 
@@ -380,4 +380,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [Live Demo](https://attendease-xi-two.vercel.app) · [Report Bug](https://github.com/abhayror17/ATTENDEASE/issues) · [Request Feature](https://github.com/abhayror17/ATTENDEASE/issues)
 
 </div>
+
 
